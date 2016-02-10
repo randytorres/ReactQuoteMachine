@@ -36,6 +36,7 @@ var RandomQuoteMachine = React.createClass({
 	render: function() {
 		return (
 			<div className="main-container">
+				<h1 className="header">Star Wars Random Quote Generator</h1>
 				<QuoteContainer quote={ this.state.data } />
 				<button className="random-quote" onClick={ this.handleRandomQuote }>Get random quote!</button>
 				<TweetButton text={ this.state.data.quote } />
